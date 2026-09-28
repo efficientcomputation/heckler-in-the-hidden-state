@@ -1,0 +1,7 @@
+# Dependency inventory from imports; NOT a tested or complete lockfile.
+# See REPRODUCIBILITY.md for missing local modules and model/data revisions.
+numpy
+torch
+transformers==4.51.3
+scikit-learn
+# Missing local modules: jcode, gradefix, ladder_subtle2

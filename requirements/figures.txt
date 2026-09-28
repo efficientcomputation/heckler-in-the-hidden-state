@@ -1,0 +1,3 @@
+# Tested figure-only environment: Python 3.12.13.
+matplotlib==3.10.7
+numpy==2.5.3

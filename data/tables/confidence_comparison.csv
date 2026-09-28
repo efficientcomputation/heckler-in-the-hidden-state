@@ -1,0 +1,12 @@
+model,signal,auc,z,null_mean,null_sd,probe_minus_this,ci_lo,ci_hi,n_rollouts,n_problems
+DiffuCoder-7B (32-step),linear_probe@L18,0.8421,4.13,0.5814,0.0631,,,,95,19
+DiffuCoder-7B (32-step),conf_vis,0.4079,-1.23,0.5032,0.0774,0.4363,0.2833,0.5973,95,19
+DiffuCoder-7B (32-step),entropy_vis_neg,0.8377,4.78,0.4879,0.0731,0.0039,-0.1333,0.1439,95,19
+DiffuCoder-7B (32-step),conf_masked,0.7982,3.77,0.4977,0.0798,0.0421,-0.1112,0.1987,95,19
+DiffuCoder-7B (16-step),linear_probe@L25,0.6011,2.26,0.5189,0.0364,,,,324,54
+DiffuCoder-7B (16-step),conf_vis,0.3817,-2.71,0.5002,0.0437,0.2103,0.1234,0.2989,324,54
+DiffuCoder-7B (16-step),entropy_vis_neg,0.5774,1.99,0.4961,0.0409,0.0134,-0.0648,0.0931,324,54
+DiffuCoder-7B (16-step),conf_masked,0.5785,2.2,0.501,0.0353,0.0139,-0.0613,0.0884,324,54
+Qwen2.5-Coder,linear_probe@L27,0.6767,4.51,0.5374,0.0309,,,,448,56
+Qwen2.5-Coder,conf,0.7031,5.32,0.4959,0.0389,-0.0268,-0.0886,0.0367,448,56
+Qwen2.5-Coder,entropy_neg,0.6931,4.99,0.4996,0.0388,-0.0159,-0.0697,0.0418,448,56

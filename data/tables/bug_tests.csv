@@ -1,0 +1,4 @@
+family,n_base_programs,n_mutants,auc_fresh,z_fresh,auc_kind_matched,z_kind_matched
+MBPP+,52,392,0.7623,6.43,0.6698,3.55
+HumanEval+,44,334,0.7033,4.79,0.6925,3.85
+"MBPP+ (flash-102B, runF)",52,399,0.8002,7.83,,

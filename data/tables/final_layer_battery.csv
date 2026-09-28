@@ -1,0 +1,12 @@
+test,auc,z
+linear_peak_L18,0.8421,
+linear_final_L27,0.8377,
+logistic_peak,0.8553,4.59
+mlp_peak,0.8158,4.11
+logistic_final,0.8158,4.32
+mlp_final,0.8026,3.92
+post_norm_final,0.8158,4.12
+tok_subspace_peak,0.7807,3.46
+tok_complement_peak,0.8289,4.27
+tok_subspace_final,0.7412,3.2
+tok_complement_final,0.8114,4.4

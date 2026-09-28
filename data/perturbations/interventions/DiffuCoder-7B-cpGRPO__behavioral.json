@@ -1,0 +1,44 @@
+[
+  {
+    "model": "DiffuCoder-7B-cpGRPO",
+    "ptype": "behavioral_noise",
+    "magnitude": 0.0,
+    "peak_layer": 22,
+    "pass_at_1": 0.6333,
+    "broken_rate": 0.3667,
+    "syntax_broken_rate": 0.0333,
+    "n": 30,
+    "steps": 96,
+    "max_new": 192,
+    "gen_sec": 4469.9,
+    "note": "noise undirected -> both-directions N/A"
+  },
+  {
+    "model": "DiffuCoder-7B-cpGRPO",
+    "ptype": "behavioral_noise",
+    "magnitude": 0.2,
+    "peak_layer": 22,
+    "pass_at_1": 0.6,
+    "broken_rate": 0.4,
+    "syntax_broken_rate": 0.0667,
+    "n": 30,
+    "steps": 96,
+    "max_new": 192,
+    "gen_sec": 3857.8,
+    "note": "noise undirected -> both-directions N/A"
+  },
+  {
+    "model": "DiffuCoder-7B-cpGRPO",
+    "ptype": "behavioral_noise",
+    "magnitude": 0.4,
+    "peak_layer": 22,
+    "pass_at_1": 0.7,
+    "broken_rate": 0.3,
+    "syntax_broken_rate": 0.0667,
+    "n": 30,
+    "steps": 96,
+    "max_new": 192,
+    "gen_sec": 3915.1,
+    "note": "noise undirected -> both-directions N/A"
+  }
+]

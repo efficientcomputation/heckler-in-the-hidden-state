@@ -1,0 +1,2137 @@
+{
+  "model": "DiffuCoder-7B",
+  "path": "/home/angad/data/hf/DiffuCoder-7B-cpGRPO",
+  "type": "DreamModel",
+  "head_src": "get_output_embeddings",
+  "final_norm": "model.norm",
+  "final_norm_type": "DreamRMSNorm",
+  "vocab": 152064,
+  "hidden": 3584,
+  "n_layers_cfg": 28,
+  "n_hidden_states": 29,
+  "peak_layer": 22,
+  "peak_hint": 22,
+  "reproduces_logged_peak": false,
+  "auc_at_peak": 0.7830188679245284,
+  "auc_L0": 0.5241090146750524,
+  "layer_curve": [
+    0.5241,
+    0.5881,
+    0.5755,
+    0.5618,
+    0.587,
+    0.6006,
+    0.6143,
+    0.609,
+    0.6153,
+    0.6373,
+    0.6572,
+    0.6887,
+    0.6908,
+    0.7484,
+    0.7327,
+    0.7537,
+    0.7547,
+    0.739,
+    0.7243,
+    0.7201,
+    0.7621,
+    0.7579,
+    0.7809,
+    0.783,
+    0.7201,
+    0.717,
+    0.7432,
+    0.7264,
+    0.7138
+  ],
+  "calibration": {
+    "cos_raw_vs_logits": 1.0,
+    "cos_gain_vs_logits": 0.896,
+    "last_is_postnorm": true
+  },
+  "primary_variant": "gain",
+  "neg_wrong_frac": 0.033,
+  "neg_exc_frac": 0.0,
+  "pos_wrong_frac": 0.0,
+  "control": {
+    "neg": {
+      "count": 1,
+      "null_mean": 0.098,
+      "null_sd": 0.317,
+      "null_max": 2,
+      "z": 2.84,
+      "p": 0.0938
+    },
+    "pos": {
+      "count": 0,
+      "null_mean": 0.116,
+      "null_sd": 0.356,
+      "null_max": 2,
+      "z": -0.33,
+      "p": 1.0
+    }
+  },
+  "poles": {
+    "gain": {
+      "pos_top30": [
+        {
+          "rank": 0,
+          "id": 330,
+          "piece": "Ġ\"",
+          "decoded": " \"",
+          "logit": 0.1443,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 1,
+          "id": 59623,
+          "piece": "iomanip",
+          "decoded": "iomanip",
+          "logit": 0.1118,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 2,
+          "id": 364,
+          "piece": "Ġ'",
+          "decoded": " '",
+          "logit": 0.1113,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 3,
+          "id": 8,
+          "piece": ")",
+          "decoded": ")",
+          "logit": 0.1099,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 4,
+          "id": 11,
+          "piece": ",",
+          "decoded": ",",
+          "logit": 0.1057,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 5,
+          "id": 320,
+          "piece": "Ġ(",
+          "decoded": " (",
+          "logit": 0.0953,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 6,
+          "id": 238,
+          "piece": "Ĳ",
+          "decoded": "�",
+          "logit": 0.0916,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 7,
+          "id": 5305,
+          "piece": "aa",
+          "decoded": "aa",
+          "logit": 0.0893,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 8,
+          "id": 497,
+          "piece": "\",",
+          "decoded": "\",",
+          "logit": 0.0892,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 9,
+          "id": 1470,
+          "piece": "ql",
+          "decoded": "ql",
+          "logit": 0.0869,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 10,
+          "id": 549,
+          "piece": "Ġ:",
+          "decoded": " :",
+          "logit": 0.0865,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 11,
+          "id": 4422,
+          "piece": "asing",
+          "decoded": "asing",
+          "logit": 0.0864,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 12,
+          "id": 38304,
+          "piece": "ç¬¦",
+          "decoded": "符",
+          "logit": 0.0857,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 13,
+          "id": 10,
+          "piece": "+",
+          "decoded": "+",
+          "logit": 0.0847,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 14,
+          "id": 328,
+          "piece": "ĠS",
+          "decoded": " S",
+          "logit": 0.084,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 15,
+          "id": 108569,
+          "piece": "åİ»éĻ¤",
+          "decoded": "去除",
+          "logit": 0.084,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 16,
+          "id": 568,
+          "piece": ").",
+          "decoded": ").",
+          "logit": 0.0836,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 17,
+          "id": 353,
+          "piece": "Ġ*",
+          "decoded": " *",
+          "logit": 0.0836,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 18,
+          "id": 97443,
+          "piece": "Ġzeroes",
+          "decoded": " zeroes",
+          "logit": 0.0835,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 19,
+          "id": 508,
+          "piece": "Ġ[",
+          "decoded": " [",
+          "logit": 0.0833,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 20,
+          "id": 925,
+          "piece": "SE",
+          "decoded": "SE",
+          "logit": 0.0828,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 21,
+          "id": 340,
+          "piece": ")Ċ",
+          "decoded": ")\n",
+          "logit": 0.0824,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 22,
+          "id": 198,
+          "piece": "Ċ",
+          "decoded": "\n",
+          "logit": 0.0822,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 23,
+          "id": 744,
+          "piece": ".m",
+          "decoded": ".m",
+          "logit": 0.082,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 24,
+          "id": 29273,
+          "piece": "Ġgently",
+          "decoded": " gently",
+          "logit": 0.0808,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 25,
+          "id": 18573,
+          "piece": "Force",
+          "decoded": "Force",
+          "logit": 0.0803,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 26,
+          "id": 14,
+          "piece": "/",
+          "decoded": "/",
+          "logit": 0.0803,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 27,
+          "id": 13,
+          "piece": ".",
+          "decoded": ".",
+          "logit": 0.0802,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 28,
+          "id": 2136,
+          "piece": "www",
+          "decoded": "www",
+          "logit": 0.08,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 29,
+          "id": 45334,
+          "piece": "hammer",
+          "decoded": "hammer",
+          "logit": 0.0798,
+          "wrong": false,
+          "exc": false
+        }
+      ],
+      "neg_top30": [
+        {
+          "rank": 0,
+          "id": 93954,
+          "piece": "--,",
+          "decoded": "--,",
+          "logit": 0.0891,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 1,
+          "id": 63347,
+          "piece": "-{",
+          "decoded": "-{",
+          "logit": 0.0853,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 2,
+          "id": 77777,
+          "piece": "Ġ~~",
+          "decoded": " ~~",
+          "logit": 0.084,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 3,
+          "id": 87252,
+          "piece": "_decorator",
+          "decoded": "_decorator",
+          "logit": 0.0822,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 4,
+          "id": 71322,
+          "piece": "Ġzx",
+          "decoded": " zx",
+          "logit": 0.0791,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 5,
+          "id": 54229,
+          "piece": ")>>",
+          "decoded": ")>>",
+          "logit": 0.0782,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 6,
+          "id": 45725,
+          "piece": "][]",
+          "decoded": "][]",
+          "logit": 0.0778,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 7,
+          "id": 91060,
+          "piece": "Equivalent",
+          "decoded": "Equivalent",
+          "logit": 0.0765,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 8,
+          "id": 5608,
+          "piece": "=False",
+          "decoded": "=False",
+          "logit": 0.076,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 9,
+          "id": 43782,
+          "piece": "?q",
+          "decoded": "?q",
+          "logit": 0.076,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 10,
+          "id": 26989,
+          "piece": "Ġconnector",
+          "decoded": " connector",
+          "logit": 0.0751,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 11,
+          "id": 81161,
+          "piece": "]})Ċ",
+          "decoded": "]})\n",
+          "logit": 0.0748,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 12,
+          "id": 6653,
+          "piece": "Ġinflu",
+          "decoded": " influ",
+          "logit": 0.0739,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 13,
+          "id": 43435,
+          "piece": "textContent",
+          "decoded": "textContent",
+          "logit": 0.0738,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 14,
+          "id": 54796,
+          "piece": "rcode",
+          "decoded": "rcode",
+          "logit": 0.0735,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 15,
+          "id": 81206,
+          "piece": ".rmtree",
+          "decoded": ".rmtree",
+          "logit": 0.0735,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 16,
+          "id": 21524,
+          "piece": "'<",
+          "decoded": "'<",
+          "logit": 0.0726,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 17,
+          "id": 28455,
+          "piece": "ALLY",
+          "decoded": "ALLY",
+          "logit": 0.0726,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 18,
+          "id": 9269,
+          "piece": "Cancel",
+          "decoded": "Cancel",
+          "logit": 0.0722,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 19,
+          "id": 29430,
+          "piece": "Unexpected",
+          "decoded": "Unexpected",
+          "logit": 0.0719,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 20,
+          "id": 23559,
+          "piece": "far",
+          "decoded": "far",
+          "logit": 0.0714,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 21,
+          "id": 54878,
+          "piece": "+)/",
+          "decoded": "+)/",
+          "logit": 0.0713,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 22,
+          "id": 23138,
+          "piece": "liest",
+          "decoded": "liest",
+          "logit": 0.0709,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 23,
+          "id": 6763,
+          "piece": "frame",
+          "decoded": "frame",
+          "logit": 0.0705,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 24,
+          "id": 1384,
+          "piece": "ough",
+          "decoded": "ough",
+          "logit": 0.0698,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 25,
+          "id": 1621,
+          "piece": "vert",
+          "decoded": "vert",
+          "logit": 0.0698,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 26,
+          "id": 3176,
+          "piece": "offset",
+          "decoded": "offset",
+          "logit": 0.0697,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 27,
+          "id": 537,
+          "piece": "Ġnot",
+          "decoded": " not",
+          "logit": 0.0697,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 28,
+          "id": 14912,
+          "piece": "NI",
+          "decoded": "NI",
+          "logit": 0.0695,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 29,
+          "id": 13452,
+          "piece": "ĠFar",
+          "decoded": " Far",
+          "logit": 0.0693,
+          "wrong": false,
+          "exc": false
+        }
+      ],
+      "neg_wrong": 1,
+      "neg_exc": 0,
+      "pos_wrong": 0,
+      "pos_exc": 0
+    },
+    "raw": {
+      "pos_top30": [
+        {
+          "rank": 0,
+          "id": 101163,
+          "piece": "çİ°å®ŀ",
+          "decoded": "现实",
+          "logit": 0.0545,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 1,
+          "id": 103133,
+          "piece": "å®ŀè´¨",
+          "decoded": "实质",
+          "logit": 0.0537,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 2,
+          "id": 110907,
+          "piece": "çļĦæľ¬è´¨",
+          "decoded": "的本质",
+          "logit": 0.0536,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 3,
+          "id": 68604,
+          "piece": "Ġeffortlessly",
+          "decoded": " effortlessly",
+          "logit": 0.0524,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 4,
+          "id": 92278,
+          "piece": "Ġswirling",
+          "decoded": " swirling",
+          "logit": 0.0522,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 5,
+          "id": 109615,
+          "piece": "ä¸ºäºĨè®©",
+          "decoded": "为了让",
+          "logit": 0.0517,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 6,
+          "id": 95748,
+          "piece": "Ġoverwhelm",
+          "decoded": " overwhelm",
+          "logit": 0.0515,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 7,
+          "id": 105262,
+          "piece": "è¯ĬæĸŃ",
+          "decoded": "诊断",
+          "logit": 0.0515,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 8,
+          "id": 132091,
+          "piece": "Ġê²ĥìľ¼ë¡ľ",
+          "decoded": " 것으로",
+          "logit": 0.0511,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 9,
+          "id": 114566,
+          "piece": "ä»¥ä¸ĭæĺ¯",
+          "decoded": "以下是",
+          "logit": 0.051,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 10,
+          "id": 101460,
+          "piece": "åħ¸åŀĭ",
+          "decoded": "典型",
+          "logit": 0.0509,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 11,
+          "id": 53266,
+          "piece": "/XMLSchema",
+          "decoded": "/XMLSchema",
+          "logit": 0.0507,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 12,
+          "id": 110451,
+          "piece": "èĩ³æŃ¤",
+          "decoded": "至此",
+          "logit": 0.0506,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 13,
+          "id": 109254,
+          "piece": "åıªæĥ³",
+          "decoded": "只想",
+          "logit": 0.0505,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 14,
+          "id": 109444,
+          "piece": "éĥ½å°Ĩ",
+          "decoded": "都将",
+          "logit": 0.0505,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 15,
+          "id": 99872,
+          "piece": "ç¼©",
+          "decoded": "缩",
+          "logit": 0.0503,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 16,
+          "id": 93054,
+          "piece": "_multiply",
+          "decoded": "_multiply",
+          "logit": 0.0502,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 17,
+          "id": 114815,
+          "piece": "æ²¡éĹ®é¢ĺ",
+          "decoded": "没问题",
+          "logit": 0.0501,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 18,
+          "id": 106049,
+          "piece": "éĢīæĭ©äºĨ",
+          "decoded": "选择了",
+          "logit": 0.05,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 19,
+          "id": 101730,
+          "piece": "æľ¬è´¨",
+          "decoded": "本质",
+          "logit": 0.0498,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 20,
+          "id": 56589,
+          "piece": "-themed",
+          "decoded": "-themed",
+          "logit": 0.0497,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 21,
+          "id": 59623,
+          "piece": "iomanip",
+          "decoded": "iomanip",
+          "logit": 0.0497,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 22,
+          "id": 108569,
+          "piece": "åİ»éĻ¤",
+          "decoded": "去除",
+          "logit": 0.0495,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 23,
+          "id": 101322,
+          "piece": "æīĢè°ĵ",
+          "decoded": "所谓",
+          "logit": 0.0495,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 24,
+          "id": 109995,
+          "piece": "æĹłç©·",
+          "decoded": "无穷",
+          "logit": 0.0494,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 25,
+          "id": 101046,
+          "piece": "åĬłå¼º",
+          "decoded": "加强",
+          "logit": 0.0493,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 26,
+          "id": 109501,
+          "piece": "æĶ¶ç¼©",
+          "decoded": "收缩",
+          "logit": 0.0492,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 27,
+          "id": 104718,
+          "piece": "çİ°åľ¨çļĦ",
+          "decoded": "现在的",
+          "logit": 0.0491,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 28,
+          "id": 99773,
+          "piece": "æ·¡",
+          "decoded": "淡",
+          "logit": 0.049,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 29,
+          "id": 54985,
+          "piece": "Ġreminiscent",
+          "decoded": " reminiscent",
+          "logit": 0.049,
+          "wrong": false,
+          "exc": false
+        }
+      ],
+      "neg_top30": [
+        {
+          "rank": 0,
+          "id": 5608,
+          "piece": "=False",
+          "decoded": "=False",
+          "logit": 0.0254,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 1,
+          "id": 537,
+          "piece": "Ġnot",
+          "decoded": " not",
+          "logit": 0.0214,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 2,
+          "id": 287,
+          "piece": "ing",
+          "decoded": "ing",
+          "logit": 0.0206,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 3,
+          "id": 1621,
+          "piece": "vert",
+          "decoded": "vert",
+          "logit": 0.0185,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 4,
+          "id": 4347,
+          "piece": "Ġoffset",
+          "decoded": " offset",
+          "logit": 0.0174,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 5,
+          "id": 2886,
+          "piece": "une",
+          "decoded": "une",
+          "logit": 0.0162,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 6,
+          "id": 6763,
+          "piece": "frame",
+          "decoded": "frame",
+          "logit": 0.0158,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 7,
+          "id": 26989,
+          "piece": "Ġconnector",
+          "decoded": " connector",
+          "logit": 0.0155,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 8,
+          "id": 10917,
+          "piece": "Ġtwice",
+          "decoded": " twice",
+          "logit": 0.0152,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 9,
+          "id": 43435,
+          "piece": "textContent",
+          "decoded": "textContent",
+          "logit": 0.0151,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 10,
+          "id": 1405,
+          "piece": "âĢĻt",
+          "decoded": "’t",
+          "logit": 0.0148,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 11,
+          "id": 1361,
+          "piece": "ities",
+          "decoded": "ities",
+          "logit": 0.0147,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 12,
+          "id": 63347,
+          "piece": "-{",
+          "decoded": "-{",
+          "logit": 0.0146,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 13,
+          "id": 2401,
+          "piece": "Ġtot",
+          "decoded": " tot",
+          "logit": 0.0146,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 14,
+          "id": 53328,
+          "piece": "Ġcomplimentary",
+          "decoded": " complimentary",
+          "logit": 0.0145,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 15,
+          "id": 41973,
+          "piece": "ĠresultSet",
+          "decoded": " resultSet",
+          "logit": 0.0141,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 16,
+          "id": 77777,
+          "piece": "Ġ~~",
+          "decoded": " ~~",
+          "logit": 0.014,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 17,
+          "id": 1419,
+          "piece": "back",
+          "decoded": "back",
+          "logit": 0.014,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 18,
+          "id": 9869,
+          "piece": "<double",
+          "decoded": "<double",
+          "logit": 0.014,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 19,
+          "id": 709,
+          "piece": "ge",
+          "decoded": "ge",
+          "logit": 0.0139,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 20,
+          "id": 93954,
+          "piece": "--,",
+          "decoded": "--,",
+          "logit": 0.0138,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 21,
+          "id": 30355,
+          "piece": "DataTable",
+          "decoded": "DataTable",
+          "logit": 0.0135,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 22,
+          "id": 3176,
+          "piece": "offset",
+          "decoded": "offset",
+          "logit": 0.0135,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 23,
+          "id": 15458,
+          "piece": "DOCTYPE",
+          "decoded": "DOCTYPE",
+          "logit": 0.0135,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 24,
+          "id": 416,
+          "piece": "res",
+          "decoded": "res",
+          "logit": 0.0134,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 25,
+          "id": 45725,
+          "piece": "][]",
+          "decoded": "][]",
+          "logit": 0.0132,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 26,
+          "id": 20625,
+          "piece": "`);Ċ",
+          "decoded": "`);\n",
+          "logit": 0.0129,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 27,
+          "id": 28803,
+          "piece": "stringstream",
+          "decoded": "stringstream",
+          "logit": 0.0129,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 28,
+          "id": 15624,
+          "piece": "++]",
+          "decoded": "++]",
+          "logit": 0.0128,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 29,
+          "id": 21524,
+          "piece": "'<",
+          "decoded": "'<",
+          "logit": 0.0126,
+          "wrong": false,
+          "exc": false
+        }
+      ],
+      "neg_wrong": 1,
+      "neg_exc": 0,
+      "pos_wrong": 0,
+      "pos_exc": 0
+    }
+  },
+  "example": {
+    "problem": "763#339",
+    "passing": {
+      "mut_idx": 232,
+      "kind": "Constant",
+      "proj_on_vstar": 1.5501,
+      "neg_wrong_in_top15": 0,
+      "top15": [
+        {
+          "rank": 0,
+          "id": 70525,
+          "piece": "StreamReader",
+          "decoded": "StreamReader",
+          "logit": 4.2016,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 1,
+          "id": 44171,
+          "piece": "]=-",
+          "decoded": "]=-",
+          "logit": 4.1567,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 2,
+          "id": 34494,
+          "piece": "uity",
+          "decoded": "uity",
+          "logit": 3.8273,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 3,
+          "id": 5672,
+          "piece": "Ġren",
+          "decoded": " ren",
+          "logit": 3.8229,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 4,
+          "id": 64618,
+          "piece": "ĠmaxY",
+          "decoded": " maxY",
+          "logit": 3.6171,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 5,
+          "id": 40185,
+          "piece": "ĠFileInputStream",
+          "decoded": " FileInputStream",
+          "logit": 3.595,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 6,
+          "id": 22215,
+          "piece": "staticmethod",
+          "decoded": "staticmethod",
+          "logit": 3.5685,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 7,
+          "id": 40287,
+          "piece": "ĠInputStreamReader",
+          "decoded": " InputStreamReader",
+          "logit": 3.5589,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 8,
+          "id": 3912,
+          "piece": "Ġey",
+          "decoded": " ey",
+          "logit": 3.4744,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 9,
+          "id": 12757,
+          "piece": "Ġdiam",
+          "decoded": " diam",
+          "logit": 3.4739,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 10,
+          "id": 57319,
+          "piece": "ĠXY",
+          "decoded": " XY",
+          "logit": 3.4495,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 11,
+          "id": 68723,
+          "piece": "ĠFahrenheit",
+          "decoded": " Fahrenheit",
+          "logit": 3.4005,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 12,
+          "id": 67482,
+          "piece": "ĠmaxX",
+          "decoded": " maxX",
+          "logit": 3.3892,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 13,
+          "id": 77636,
+          "piece": "Ġresistor",
+          "decoded": " resistor",
+          "logit": 3.3576,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 14,
+          "id": 61864,
+          "piece": "SqlConnection",
+          "decoded": "SqlConnection",
+          "logit": 3.3558,
+          "wrong": false,
+          "exc": false
+        }
+      ],
+      "code_tail": "def find_min_diff(arr, n):\n    arr = sorted(arr)\n    diff = 9 ** 20\n    for i in range(n - 1):\n        if arr[i + 1] - arr[i] < diff:\n            diff = arr[i + 1] - arr[i]\n    return diff"
+    },
+    "failing": {
+      "mut_idx": 235,
+      "kind": "Constant",
+      "proj_on_vstar": -1.8434,
+      "neg_wrong_in_top15": 0,
+      "top15": [
+        {
+          "rank": 0,
+          "id": 70525,
+          "piece": "StreamReader",
+          "decoded": "StreamReader",
+          "logit": 4.1369,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 1,
+          "id": 44171,
+          "piece": "]=-",
+          "decoded": "]=-",
+          "logit": 4.0157,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 2,
+          "id": 34494,
+          "piece": "uity",
+          "decoded": "uity",
+          "logit": 3.917,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 3,
+          "id": 12757,
+          "piece": "Ġdiam",
+          "decoded": " diam",
+          "logit": 3.5478,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 4,
+          "id": 5672,
+          "piece": "Ġren",
+          "decoded": " ren",
+          "logit": 3.5435,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 5,
+          "id": 40185,
+          "piece": "ĠFileInputStream",
+          "decoded": " FileInputStream",
+          "logit": 3.5269,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 6,
+          "id": 64618,
+          "piece": "ĠmaxY",
+          "decoded": " maxY",
+          "logit": 3.4326,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 7,
+          "id": 3912,
+          "piece": "Ġey",
+          "decoded": " ey",
+          "logit": 3.4309,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 8,
+          "id": 49216,
+          "piece": "/problems",
+          "decoded": "/problems",
+          "logit": 3.3891,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 9,
+          "id": 61864,
+          "piece": "SqlConnection",
+          "decoded": "SqlConnection",
+          "logit": 3.3476,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 10,
+          "id": 41528,
+          "piece": ".quit",
+          "decoded": ".quit",
+          "logit": 3.3468,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 11,
+          "id": 57319,
+          "piece": "ĠXY",
+          "decoded": " XY",
+          "logit": 3.323,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 12,
+          "id": 63956,
+          "piece": "igate",
+          "decoded": "igate",
+          "logit": 3.2888,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 13,
+          "id": 48673,
+          "piece": "RTC",
+          "decoded": "RTC",
+          "logit": 3.2831,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 14,
+          "id": 17806,
+          "piece": "Ġlon",
+          "decoded": " lon",
+          "logit": 3.2521,
+          "wrong": false,
+          "exc": false
+        }
+      ],
+      "code_tail": "def find_min_diff(arr, n):\n    arr = sorted(arr)\n    diff = 10 ** 20\n    for i in range(n - 1):\n        if arr[i + 1] - arr[i] < diff:\n            diff = arr[i + 2] - arr[i]\n    return diff"
+    }
+  },
+  "per_position_failing": {
+    "mut_idx": 235,
+    "n_positions": 66,
+    "frac_wrong_in_top3": 0.015,
+    "rows": [
+      {
+        "pos": 41,
+        "ctx": "def",
+        "top3": [
+          "def",
+          " ser",
+          " get"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 42,
+        "ctx": "Ġfind",
+        "top3": [
+          "pq",
+          "staticmethod",
+          "bugs"
+        ],
+        "wrong_in_top3": true
+      },
+      {
+        "pos": 43,
+        "ctx": "_min",
+        "top3": [
+          "rypted",
+          "-Compatible",
+          "/env"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 44,
+        "ctx": "_diff",
+        "top3": [
+          "(**",
+          "-Compatible",
+          "(self"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 45,
+        "ctx": "(arr",
+        "top3": [
+          "):\n",
+          " delet",
+          " InputStreamReader"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 46,
+        "ctx": ",",
+        "top3": [
+          " n",
+          " k",
+          "):\n"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 47,
+        "ctx": "Ġn",
+        "top3": [
+          "):\n",
+          ")",
+          "):"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 48,
+        "ctx": "):Ċ",
+        "top3": [
+          "   ",
+          "\treturn",
+          "INCT"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 49,
+        "ctx": "ĠĠĠ",
+        "top3": [
+          " return",
+          " cord",
+          " #"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 50,
+        "ctx": "Ġarr",
+        "top3": [
+          " =",
+          " zig",
+          ".ONE"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 51,
+        "ctx": "Ġ=",
+        "top3": [
+          "iset",
+          " sorted",
+          " list"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 52,
+        "ctx": "Ġsorted",
+        "top3": [
+          "ertz",
+          " sieve",
+          "/ubuntu"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 53,
+        "ctx": "(arr",
+        "top3": [
+          " delet",
+          " InputStreamReader",
+          "[])"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 54,
+        "ctx": ")Ċ",
+        "top3": [
+          "   ",
+          " InputStreamReader",
+          "       "
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 55,
+        "ctx": "ĠĠĠ",
+        "top3": [
+          " l",
+          " var",
+          " cord"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 56,
+        "ctx": "Ġdiff",
+        "top3": [
+          " =",
+          " ",
+          "="
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 57,
+        "ctx": "Ġ=",
+        "top3": [
+          " ",
+          "ima",
+          "JA"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 58,
+        "ctx": "Ġ",
+        "top3": [
+          "引",
+          "jas",
+          " l"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 59,
+        "ctx": "1",
+        "top3": [
+          "roring",
+          "clid",
+          "\"\"\n"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 60,
+        "ctx": "0",
+        "top3": [
+          " InputStreamReader",
+          " (\"-",
+          " Platforms"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 61,
+        "ctx": "Ġ**",
+        "top3": [
+          "pliant",
+          "、",
+          "inary"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 62,
+        "ctx": "Ġ",
+        "top3": [
+          ".chars",
+          "pliant",
+          "ru"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 63,
+        "ctx": "2",
+        "top3": [
+          "-fw",
+          "(Console",
+          "�"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 64,
+        "ctx": "0",
+        "top3": [
+          " stacking",
+          "quent",
+          " bounding"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 65,
+        "ctx": "Ċ",
+        "top3": [
+          " for",
+          "   ",
+          "\tfor"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 66,
+        "ctx": "ĠĠĠ",
+        "top3": [
+          " for",
+          " while",
+          "\tfor"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 67,
+        "ctx": "Ġfor",
+        "top3": [
+          " i",
+          "i",
+          " j"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 68,
+        "ctx": "Ġi",
+        "top3": [
+          "ertz",
+          "arde",
+          ".capitalize"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 69,
+        "ctx": "Ġin",
+        "top3": [
+          " enumerate",
+          "/env",
+          " range"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 70,
+        "ctx": "Ġrange",
+        "top3": [
+          "(",
+          "()",
+          " n"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 71,
+        "ctx": "(n",
+        "top3": [
+          " '-')\n",
+          "wig",
+          "*["
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 72,
+        "ctx": "Ġ-",
+        "top3": [
+          ".subtract",
+          "´",
+          "lay"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 73,
+        "ctx": "Ġ",
+        "top3": [
+          "secutive",
+          "ometry",
+          " another"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 74,
+        "ctx": "1",
+        "top3": [
+          "INCT",
+          "osity",
+          "acency"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 75,
+        "ctx": "):Ċ",
+        "top3": [
+          " if",
+          "\tif",
+          "   "
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 76,
+        "ctx": "ĠĠĠĠĠĠĠ",
+        "top3": [
+          " if",
+          "\tif",
+          " while"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 77,
+        "ctx": "Ġif",
+        "top3": [
+          " abs",
+          "atur",
+          " dep"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 78,
+        "ctx": "Ġarr",
+        "top3": [
+          "ertz",
+          "-wrap",
+          " prefetch"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 79,
+        "ctx": "[i",
+        "top3": [
+          ".githubusercontent",
+          "iloc",
+          "ectors"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 80,
+        "ctx": "Ġ+",
+        "top3": [
+          " Marketplace",
+          "/embed",
+          "IgnoreCase"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 81,
+        "ctx": "Ġ",
+        "top3": [
+          "secutive",
+          "1",
+          "2"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 82,
+        "ctx": "1",
+        "top3": [
+          "INCT",
+          "cimal",
+          "Mbps"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 83,
+        "ctx": "]",
+        "top3": [
+          " -",
+          "s",
+          "//"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 84,
+        "ctx": "Ġ-",
+        "top3": [
+          " ",
+          " pip",
+          "staticmethod"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 85,
+        "ctx": "Ġarr",
+        "top3": [
+          "[P",
+          " getSize",
+          "@Test"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 86,
+        "ctx": "[i",
+        "top3": [
+          "]",
+          "wig",
+          "WiFi"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 87,
+        "ctx": "]",
+        "top3": [
+          " >",
+          "0",
+          " "
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 88,
+        "ctx": "Ġ<",
+        "top3": [
+          "urbation",
+          "raries",
+          " getSize"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 89,
+        "ctx": "Ġdiff",
+        "top3": [
+          " ",
+          "\n",
+          ":\n"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 90,
+        "ctx": ":Ċ",
+        "top3": [
+          " maxX",
+          " then",
+          "       "
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 91,
+        "ctx": "ĠĠĠĠĠĠĠĠĠĠĠ",
+        "top3": [
+          " continue",
+          " return",
+          " break"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 92,
+        "ctx": "Ġdiff",
+        "top3": [
+          " =",
+          "=",
+          " "
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 93,
+        "ctx": "Ġ=",
+        "top3": [
+          "iset",
+          "quent",
+          "cy"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 94,
+        "ctx": "Ġarr",
+        "top3": [
+          "agine",
+          "liest",
+          "-wrap"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 95,
+        "ctx": "[i",
+        "top3": [
+          "liest",
+          "\"+\"",
+          "ectors"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 96,
+        "ctx": "Ġ+",
+        "top3": [
+          "IFF",
+          "IgnoreCase",
+          "\\\"\""
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 97,
+        "ctx": "Ġ",
+        "top3": [
+          "2",
+          "1",
+          "0"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 98,
+        "ctx": "2",
+        "top3": [
+          "Concurrency",
+          "​​",
+          "}`;\n"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 99,
+        "ctx": "]",
+        "top3": [
+          "s",
+          "5",
+          " -"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 100,
+        "ctx": "Ġ-",
+        "top3": [
+          " geometric",
+          " thermal",
+          " mu"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 101,
+        "ctx": "Ġarr",
+        "top3": [
+          "oes",
+          "semblies",
+          "aviest"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 102,
+        "ctx": "[i",
+        "top3": [
+          " ))}\n",
+          "aviest",
+          "Alchemy"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 103,
+        "ctx": "]Ċ",
+        "top3": [
+          " return",
+          "\treturn",
+          "s"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 104,
+        "ctx": "ĠĠĠ",
+        "top3": [
+          " return",
+          "\treturn",
+          "return"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 105,
+        "ctx": "Ġreturn",
+        "top3": [
+          ".tie",
+          "OfSize",
+          ";\"\n"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 106,
+        "ctx": "Ġdiff",
+        "top3": [
+          "\n\n",
+          ";\n\n",
+          "。\n\n"
+        ],
+        "wrong_in_top3": false
+      }
+    ]
+  },
+  "note": "logit-lens = linear projection through final-norm gain + unembedding, NOT ground truth. wrongness lexicon = EN+ZH regex (lens_control.py); exc = Python-exception subset. direction == pert_run/fit_dirs fit (mean-pooled, per-problem-centered, unit).",
+  "elapsed_s": 136.3
+}

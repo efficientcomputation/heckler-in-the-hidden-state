@@ -1,0 +1,8 @@
+[corpus] 53 base programs -> 399 mutants (117 pass / 282 fail)
+[probe] merged (399, 33, 4096)
+depth curve: 0.53 0.57 0.59 0.61 0.60 0.59 0.55 0.60 0.62 0.64 0.65 0.66 0.68 0.72 0.70 0.72 0.71 0.71 0.71 0.73 0.68 0.69 0.68 0.68 0.69 0.69 0.70 0.69 0.71 0.71 0.70 0.72 0.63
+last 5 hidden-state entries: [0.714, 0.706, 0.696, 0.717, 0.632]
+raw_last_block: AUC=0.609 null=0.502±0.042 z=+2.56
+normed_last_block: AUC=0.632 null=0.504±0.039 z=+3.30
+peak: L19 AUC=0.730 z=+6.15
+RUNFS_DONE -> /home/ubuntu/jlens/out/runFS.json

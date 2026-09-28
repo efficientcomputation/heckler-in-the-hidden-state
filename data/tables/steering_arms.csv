@@ -1,0 +1,12 @@
+arm,pass_of_30,compile_of_30,delta_pass_vs_base,delta_compile_vs_base
+base,15,26,0,0
+probe_g+,14,24,-1,-2
+probe_g-,5,16,-10,-10
+probe_c+,15,25,0,-1
+probe_c-,10,21,-5,-5
+rand_g+,15,22,0,-4
+rand_g-,14,24,-1,-2
+rand_c+,16,25,1,-1
+train_g+,5,9,-10,-17
+train_g-,15,27,0,1
+train_c+,7,12,-8,-14

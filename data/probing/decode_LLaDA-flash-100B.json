@@ -1,0 +1,2187 @@
+{
+  "model": "LLaDA-flash-100B",
+  "path": "/scratch/hf/inclusionAI_LLaDA2.0-flash",
+  "type": "LLaDA2MoeModel",
+  "head_src": "safetensors:lm_head.weight",
+  "final_norm": "norm",
+  "final_norm_type": "LLaDA2MoeRMSNorm",
+  "vocab": 157184,
+  "hidden": 4096,
+  "n_layers_cfg": 32,
+  "n_hidden_states": 33,
+  "peak_layer": 20,
+  "peak_hint": 20,
+  "reproduces_logged_peak": false,
+  "auc_at_peak": 0.8238993710691822,
+  "auc_L0": 0.5220125786163521,
+  "layer_curve": [
+    0.522,
+    0.5723,
+    0.6153,
+    0.5818,
+    0.5933,
+    0.6017,
+    0.4497,
+    0.4528,
+    0.457,
+    0.5042,
+    0.5325,
+    0.6457,
+    0.6897,
+    0.7002,
+    0.6981,
+    0.76,
+    0.7694,
+    0.7558,
+    0.7956,
+    0.7966,
+    0.8208,
+    0.804,
+    0.8124,
+    0.8061,
+    0.8187,
+    0.8008,
+    0.8061,
+    0.8239,
+    0.8019,
+    0.8208,
+    0.7851,
+    0.8113,
+    0.6384
+  ],
+  "calibration": {},
+  "primary_variant": "gain",
+  "neg_wrong_frac": 0.833,
+  "neg_exc_frac": 0.0,
+  "pos_wrong_frac": 0.0,
+  "control": {
+    "neg": {
+      "count": 25,
+      "null_mean": 0.04,
+      "null_sd": 0.216,
+      "null_max": 2,
+      "z": 115.76,
+      "p": 0.002
+    },
+    "pos": {
+      "count": 0,
+      "null_mean": 0.038,
+      "null_sd": 0.229,
+      "null_max": 3,
+      "z": -0.17,
+      "p": 1.0
+    }
+  },
+  "poles": {
+    "gain": {
+      "pos_top30": [
+        {
+          "rank": 0,
+          "id": 46464,
+          "piece": "æĸĩåĮĸåĴĮ",
+          "decoded": "文化和",
+          "logit": 0.2513,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 1,
+          "id": 19955,
+          "piece": "èķ´",
+          "decoded": "蕴",
+          "logit": 0.2455,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 2,
+          "id": 114580,
+          "piece": "Ġagn",
+          "decoded": " agn",
+          "logit": 0.241,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 3,
+          "id": 79013,
+          "piece": "Ġsuffices",
+          "decoded": " suffices",
+          "logit": 0.2362,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 4,
+          "id": 35084,
+          "piece": "Alt",
+          "decoded": "Alt",
+          "logit": 0.2316,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 5,
+          "id": 37442,
+          "piece": "Early",
+          "decoded": "Early",
+          "logit": 0.2224,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 6,
+          "id": 5582,
+          "piece": "éĽ¶",
+          "decoded": "零",
+          "logit": 0.2156,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 7,
+          "id": 35554,
+          "piece": "æĮļ",
+          "decoded": "挚",
+          "logit": 0.2153,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 8,
+          "id": 110103,
+          "piece": "æĸĩåĮĸä¸İ",
+          "decoded": "文化与",
+          "logit": 0.214,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 9,
+          "id": 47041,
+          "piece": "ç´§åĩĳ",
+          "decoded": "紧凑",
+          "logit": 0.2129,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 10,
+          "id": 34779,
+          "piece": "åĨħåľ¨",
+          "decoded": "内在",
+          "logit": 0.2108,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 11,
+          "id": 26343,
+          "piece": "vet",
+          "decoded": "vet",
+          "logit": 0.207,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 12,
+          "id": 51824,
+          "piece": "ALT",
+          "decoded": "ALT",
+          "logit": 0.2052,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 13,
+          "id": 9093,
+          "piece": "export",
+          "decoded": "export",
+          "logit": 0.2044,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 14,
+          "id": 109434,
+          "piece": "ï¼Įä½Ĩåıªè¦ģ",
+          "decoded": "，但只要",
+          "logit": 0.2024,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 15,
+          "id": 70339,
+          "piece": "ï¼Įä¸įå¦¨",
+          "decoded": "，不妨",
+          "logit": 0.2024,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 16,
+          "id": 81044,
+          "piece": "åħ¼åħ·",
+          "decoded": "兼具",
+          "logit": 0.2023,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 17,
+          "id": 7400,
+          "piece": "æ¯ķç«Ł",
+          "decoded": "毕竟",
+          "logit": 0.2013,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 18,
+          "id": 118772,
+          "piece": "èĻ½çĦ¶ä¸įæĺ¯",
+          "decoded": "虽然不是",
+          "logit": 0.2007,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 19,
+          "id": 33772,
+          "piece": "agnostic",
+          "decoded": "agnostic",
+          "logit": 0.1995,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 20,
+          "id": 60635,
+          "piece": "åľ¨åħ¨çĲĥ",
+          "decoded": "在全球",
+          "logit": 0.1989,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 21,
+          "id": 14495,
+          "piece": "VC",
+          "decoded": "VC",
+          "logit": 0.1969,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 22,
+          "id": 5357,
+          "piece": "lied",
+          "decoded": "lied",
+          "logit": 0.1964,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 23,
+          "id": 98571,
+          "piece": "Bootstrap",
+          "decoded": "Bootstrap",
+          "logit": 0.1956,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 24,
+          "id": 33291,
+          "piece": "early",
+          "decoded": "early",
+          "logit": 0.1948,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 25,
+          "id": 67222,
+          "piece": "AO",
+          "decoded": "AO",
+          "logit": 0.1947,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 26,
+          "id": 99349,
+          "piece": "èķ´åĲ«çĿĢ",
+          "decoded": "蕴含着",
+          "logit": 0.1942,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 27,
+          "id": 74085,
+          "piece": "å¾ĹçĽĬäºİ",
+          "decoded": "得益于",
+          "logit": 0.1941,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 28,
+          "id": 31649,
+          "piece": "åĤį",
+          "decoded": "傍",
+          "logit": 0.194,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 29,
+          "id": 125546,
+          "piece": "ï¼Įè¶³å¤Ł",
+          "decoded": "，足够",
+          "logit": 0.194,
+          "wrong": false,
+          "exc": false
+        }
+      ],
+      "neg_top30": [
+        {
+          "rank": 0,
+          "id": 44854,
+          "piece": "Ġsupposedly",
+          "decoded": " supposedly",
+          "logit": 0.5014,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 1,
+          "id": 11613,
+          "piece": "Ġsupposed",
+          "decoded": " supposed",
+          "logit": 0.4668,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 2,
+          "id": 52547,
+          "piece": "Ġincorrectly",
+          "decoded": " incorrectly",
+          "logit": 0.4511,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 3,
+          "id": 36454,
+          "piece": "éĶĻè¯¯çļĦ",
+          "decoded": "错误的",
+          "logit": 0.4462,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 4,
+          "id": 94258,
+          "piece": "Ġmistakenly",
+          "decoded": " mistakenly",
+          "logit": 0.4011,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 5,
+          "id": 96787,
+          "piece": "æĺ¯éĶĻè¯¯çļĦ",
+          "decoded": "是错误的",
+          "logit": 0.3986,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 6,
+          "id": 5695,
+          "piece": "Ġwrong",
+          "decoded": " wrong",
+          "logit": 0.3891,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 7,
+          "id": 51946,
+          "piece": "ĠWrong",
+          "decoded": " Wrong",
+          "logit": 0.3802,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 8,
+          "id": 18569,
+          "piece": "Ġincorrect",
+          "decoded": " incorrect",
+          "logit": 0.3783,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 9,
+          "id": 89659,
+          "piece": "Ġwrongly",
+          "decoded": " wrongly",
+          "logit": 0.375,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 10,
+          "id": 45497,
+          "piece": "ï¼ĮåºĶè¯¥æĺ¯",
+          "decoded": "，应该是",
+          "logit": 0.3648,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 11,
+          "id": 63441,
+          "piece": "wrong",
+          "decoded": "wrong",
+          "logit": 0.3555,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 12,
+          "id": 89863,
+          "piece": "çļĦéĶĻè¯¯",
+          "decoded": "的错误",
+          "logit": 0.3444,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 13,
+          "id": 61430,
+          "piece": "Wrong",
+          "decoded": "Wrong",
+          "logit": 0.3432,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 14,
+          "id": 19232,
+          "piece": "éĶĻäºĨ",
+          "decoded": "错了",
+          "logit": 0.3421,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 15,
+          "id": 102210,
+          "piece": "Incorrect",
+          "decoded": "Incorrect",
+          "logit": 0.3419,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 16,
+          "id": 21695,
+          "piece": "Ġconfused",
+          "decoded": " confused",
+          "logit": 0.3418,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 17,
+          "id": 73914,
+          "piece": "Ġmisunderstanding",
+          "decoded": " misunderstanding",
+          "logit": 0.3375,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 18,
+          "id": 30113,
+          "piece": "Ġconfusing",
+          "decoded": " confusing",
+          "logit": 0.3326,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 19,
+          "id": 63927,
+          "piece": "Ġimproperly",
+          "decoded": " improperly",
+          "logit": 0.3271,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 20,
+          "id": 91680,
+          "piece": "æľīè¯¯",
+          "decoded": "有误",
+          "logit": 0.3227,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 21,
+          "id": 60667,
+          "piece": "ĠâĿ",
+          "decoded": " �",
+          "logit": 0.3227,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 22,
+          "id": 76128,
+          "piece": "åºĶæĺ¯",
+          "decoded": "应是",
+          "logit": 0.3223,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 23,
+          "id": 108322,
+          "piece": "Ġerroneously",
+          "decoded": " erroneously",
+          "logit": 0.3185,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 24,
+          "id": 4891,
+          "piece": "è¯¯",
+          "decoded": "误",
+          "logit": 0.3173,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 25,
+          "id": 109930,
+          "piece": "Ġ???",
+          "decoded": " ???",
+          "logit": 0.3093,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 26,
+          "id": 106717,
+          "piece": "ĠWorse",
+          "decoded": " Worse",
+          "logit": 0.3035,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 27,
+          "id": 82479,
+          "piece": "Ġstrangely",
+          "decoded": " strangely",
+          "logit": 0.3021,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 28,
+          "id": 13697,
+          "piece": "åºĶè¯¥æĺ¯",
+          "decoded": "应该是",
+          "logit": 0.2982,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 29,
+          "id": 91599,
+          "piece": "Ġtypo",
+          "decoded": " typo",
+          "logit": 0.2971,
+          "wrong": false,
+          "exc": false
+        }
+      ],
+      "neg_wrong": 25,
+      "neg_exc": 0,
+      "pos_wrong": 0,
+      "pos_exc": 0
+    },
+    "raw": {
+      "pos_top30": [
+        {
+          "rank": 0,
+          "id": 46464,
+          "piece": "æĸĩåĮĸåĴĮ",
+          "decoded": "文化和",
+          "logit": 0.1204,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 1,
+          "id": 114580,
+          "piece": "Ġagn",
+          "decoded": " agn",
+          "logit": 0.1178,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 2,
+          "id": 79013,
+          "piece": "Ġsuffices",
+          "decoded": " suffices",
+          "logit": 0.1133,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 3,
+          "id": 19955,
+          "piece": "èķ´",
+          "decoded": "蕴",
+          "logit": 0.1104,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 4,
+          "id": 35084,
+          "piece": "Alt",
+          "decoded": "Alt",
+          "logit": 0.1088,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 5,
+          "id": 109434,
+          "piece": "ï¼Įä½Ĩåıªè¦ģ",
+          "decoded": "，但只要",
+          "logit": 0.1048,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 6,
+          "id": 37442,
+          "piece": "Early",
+          "decoded": "Early",
+          "logit": 0.1019,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 7,
+          "id": 110103,
+          "piece": "æĸĩåĮĸä¸İ",
+          "decoded": "文化与",
+          "logit": 0.1017,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 8,
+          "id": 118772,
+          "piece": "èĻ½çĦ¶ä¸įæĺ¯",
+          "decoded": "虽然不是",
+          "logit": 0.1013,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 9,
+          "id": 5582,
+          "piece": "éĽ¶",
+          "decoded": "零",
+          "logit": 0.1005,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 10,
+          "id": 22866,
+          "piece": "Ġunp",
+          "decoded": " unp",
+          "logit": 0.1005,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 11,
+          "id": 26343,
+          "piece": "vet",
+          "decoded": "vet",
+          "logit": 0.1004,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 12,
+          "id": 35554,
+          "piece": "æĮļ",
+          "decoded": "挚",
+          "logit": 0.0987,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 13,
+          "id": 125355,
+          "piece": "æ²¡æľīåħ¶ä»ĸ",
+          "decoded": "没有其他",
+          "logit": 0.0978,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 14,
+          "id": 60635,
+          "piece": "åľ¨åħ¨çĲĥ",
+          "decoded": "在全球",
+          "logit": 0.097,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 15,
+          "id": 27926,
+          "piece": "ĠAlt",
+          "decoded": " Alt",
+          "logit": 0.0961,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 16,
+          "id": 45768,
+          "piece": "Ġovert",
+          "decoded": " overt",
+          "logit": 0.0959,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 17,
+          "id": 70339,
+          "piece": "ï¼Įä¸įå¦¨",
+          "decoded": "，不妨",
+          "logit": 0.0955,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 18,
+          "id": 9093,
+          "piece": "export",
+          "decoded": "export",
+          "logit": 0.0954,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 19,
+          "id": 98571,
+          "piece": "Bootstrap",
+          "decoded": "Bootstrap",
+          "logit": 0.0948,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 20,
+          "id": 118158,
+          "piece": "ï¼Įä¹Łåı¯ä»¥éĢļè¿ĩ",
+          "decoded": "，也可以通过",
+          "logit": 0.0942,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 21,
+          "id": 34779,
+          "piece": "åĨħåľ¨",
+          "decoded": "内在",
+          "logit": 0.0937,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 22,
+          "id": 67222,
+          "piece": "AO",
+          "decoded": "AO",
+          "logit": 0.0934,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 23,
+          "id": 65486,
+          "piece": "_execut",
+          "decoded": "_execut",
+          "logit": 0.0929,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 24,
+          "id": 88660,
+          "piece": "_virtual",
+          "decoded": "_virtual",
+          "logit": 0.0928,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 25,
+          "id": 51824,
+          "piece": "ALT",
+          "decoded": "ALT",
+          "logit": 0.0927,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 26,
+          "id": 47041,
+          "piece": "ç´§åĩĳ",
+          "decoded": "紧凑",
+          "logit": 0.092,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 27,
+          "id": 7400,
+          "piece": "æ¯ķç«Ł",
+          "decoded": "毕竟",
+          "logit": 0.0916,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 28,
+          "id": 51603,
+          "piece": "ï¼Įåħ¨çĲĥ",
+          "decoded": "，全球",
+          "logit": 0.0913,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 29,
+          "id": 41253,
+          "piece": "Ġbios",
+          "decoded": " bios",
+          "logit": 0.091,
+          "wrong": false,
+          "exc": false
+        }
+      ],
+      "neg_top30": [
+        {
+          "rank": 0,
+          "id": 44854,
+          "piece": "Ġsupposedly",
+          "decoded": " supposedly",
+          "logit": 0.2551,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 1,
+          "id": 36454,
+          "piece": "éĶĻè¯¯çļĦ",
+          "decoded": "错误的",
+          "logit": 0.2323,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 2,
+          "id": 11613,
+          "piece": "Ġsupposed",
+          "decoded": " supposed",
+          "logit": 0.2316,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 3,
+          "id": 52547,
+          "piece": "Ġincorrectly",
+          "decoded": " incorrectly",
+          "logit": 0.2294,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 4,
+          "id": 94258,
+          "piece": "Ġmistakenly",
+          "decoded": " mistakenly",
+          "logit": 0.2013,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 5,
+          "id": 96787,
+          "piece": "æĺ¯éĶĻè¯¯çļĦ",
+          "decoded": "是错误的",
+          "logit": 0.1959,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 6,
+          "id": 51946,
+          "piece": "ĠWrong",
+          "decoded": " Wrong",
+          "logit": 0.1954,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 7,
+          "id": 5695,
+          "piece": "Ġwrong",
+          "decoded": " wrong",
+          "logit": 0.1914,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 8,
+          "id": 89659,
+          "piece": "Ġwrongly",
+          "decoded": " wrongly",
+          "logit": 0.1913,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 9,
+          "id": 63441,
+          "piece": "wrong",
+          "decoded": "wrong",
+          "logit": 0.1873,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 10,
+          "id": 18569,
+          "piece": "Ġincorrect",
+          "decoded": " incorrect",
+          "logit": 0.1872,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 11,
+          "id": 45497,
+          "piece": "ï¼ĮåºĶè¯¥æĺ¯",
+          "decoded": "，应该是",
+          "logit": 0.187,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 12,
+          "id": 19232,
+          "piece": "éĶĻäºĨ",
+          "decoded": "错了",
+          "logit": 0.1811,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 13,
+          "id": 102210,
+          "piece": "Incorrect",
+          "decoded": "Incorrect",
+          "logit": 0.1799,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 14,
+          "id": 61430,
+          "piece": "Wrong",
+          "decoded": "Wrong",
+          "logit": 0.1783,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 15,
+          "id": 60667,
+          "piece": "ĠâĿ",
+          "decoded": " �",
+          "logit": 0.1743,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 16,
+          "id": 89863,
+          "piece": "çļĦéĶĻè¯¯",
+          "decoded": "的错误",
+          "logit": 0.1732,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 17,
+          "id": 21695,
+          "piece": "Ġconfused",
+          "decoded": " confused",
+          "logit": 0.1722,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 18,
+          "id": 4891,
+          "piece": "è¯¯",
+          "decoded": "误",
+          "logit": 0.1717,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 19,
+          "id": 63927,
+          "piece": "Ġimproperly",
+          "decoded": " improperly",
+          "logit": 0.1707,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 20,
+          "id": 73914,
+          "piece": "Ġmisunderstanding",
+          "decoded": " misunderstanding",
+          "logit": 0.1704,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 21,
+          "id": 76128,
+          "piece": "åºĶæĺ¯",
+          "decoded": "应是",
+          "logit": 0.1704,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 22,
+          "id": 30113,
+          "piece": "Ġconfusing",
+          "decoded": " confusing",
+          "logit": 0.1694,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 23,
+          "id": 108322,
+          "piece": "Ġerroneously",
+          "decoded": " erroneously",
+          "logit": 0.168,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 24,
+          "id": 91680,
+          "piece": "æľīè¯¯",
+          "decoded": "有误",
+          "logit": 0.1626,
+          "wrong": true,
+          "exc": false
+        },
+        {
+          "rank": 25,
+          "id": 109930,
+          "piece": "Ġ???",
+          "decoded": " ???",
+          "logit": 0.1625,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 26,
+          "id": 35340,
+          "piece": "orrect",
+          "decoded": "orrect",
+          "logit": 0.1597,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 27,
+          "id": 82479,
+          "piece": "Ġstrangely",
+          "decoded": " strangely",
+          "logit": 0.1567,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 28,
+          "id": 106717,
+          "piece": "ĠWorse",
+          "decoded": " Worse",
+          "logit": 0.1564,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 29,
+          "id": 39816,
+          "piece": "Ġmistaken",
+          "decoded": " mistaken",
+          "logit": 0.1548,
+          "wrong": true,
+          "exc": false
+        }
+      ],
+      "neg_wrong": 25,
+      "neg_exc": 0,
+      "pos_wrong": 0,
+      "pos_exc": 0
+    }
+  },
+  "example": {
+    "problem": "763#339",
+    "passing": {
+      "mut_idx": 232,
+      "kind": "Constant",
+      "proj_on_vstar": 3.7167,
+      "neg_wrong_in_top15": 0,
+      "top15": [
+        {
+          "rank": 0,
+          "id": 121110,
+          "piece": "ĠXOR",
+          "decoded": " XOR",
+          "logit": 14.5527,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 1,
+          "id": 2874,
+          "piece": "Ġ`",
+          "decoded": " `",
+          "logit": 11.9317,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 2,
+          "id": 198,
+          "piece": "Ċ",
+          "decoded": "\n",
+          "logit": 11.9271,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 3,
+          "id": 311,
+          "piece": "ãĢĤ",
+          "decoded": "。",
+          "logit": 11.2855,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 4,
+          "id": 11497,
+          "piece": "Ġiter",
+          "decoded": " iter",
+          "logit": 11.2821,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 5,
+          "id": 55257,
+          "piece": "éģįåİĨ",
+          "decoded": "遍历",
+          "logit": 11.0776,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 6,
+          "id": 1032,
+          "piece": "ï¼Ī",
+          "decoded": "（",
+          "logit": 10.1749,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 7,
+          "id": 28190,
+          "piece": "Ġtuple",
+          "decoded": " tuple",
+          "logit": 10.0435,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 8,
+          "id": 95665,
+          "piece": "Ġslicing",
+          "decoded": " slicing",
+          "logit": 9.6555,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 9,
+          "id": 62,
+          "piece": "_",
+          "decoded": "_",
+          "logit": 9.454,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 10,
+          "id": 113668,
+          "piece": "ä¸İåİŁ",
+          "decoded": "与原",
+          "logit": 9.3496,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 11,
+          "id": 341,
+          "piece": "Ġis",
+          "decoded": " is",
+          "logit": 9.2102,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 12,
+          "id": 63,
+          "piece": "`",
+          "decoded": "`",
+          "logit": 9.1849,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 13,
+          "id": 296,
+          "piece": "Ġin",
+          "decoded": " in",
+          "logit": 9.1718,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 14,
+          "id": 941,
+          "piece": "Ġ//",
+          "decoded": " //",
+          "logit": 9.1561,
+          "wrong": false,
+          "exc": false
+        }
+      ],
+      "code_tail": "def find_min_diff(arr, n):\n    arr = sorted(arr)\n    diff = 9 ** 20\n    for i in range(n - 1):\n        if arr[i + 1] - arr[i] < diff:\n            diff = arr[i + 1] - arr[i]\n    return diff"
+    },
+    "failing": {
+      "mut_idx": 235,
+      "kind": "Constant",
+      "proj_on_vstar": -4.984,
+      "neg_wrong_in_top15": 0,
+      "top15": [
+        {
+          "rank": 0,
+          "id": 121110,
+          "piece": "ĠXOR",
+          "decoded": " XOR",
+          "logit": 14.5185,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 1,
+          "id": 2874,
+          "piece": "Ġ`",
+          "decoded": " `",
+          "logit": 11.7829,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 2,
+          "id": 198,
+          "piece": "Ċ",
+          "decoded": "\n",
+          "logit": 11.0723,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 3,
+          "id": 1032,
+          "piece": "ï¼Ī",
+          "decoded": "（",
+          "logit": 10.9921,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 4,
+          "id": 55257,
+          "piece": "éģįåİĨ",
+          "decoded": "遍历",
+          "logit": 10.7916,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 5,
+          "id": 311,
+          "piece": "ãĢĤ",
+          "decoded": "。",
+          "logit": 10.6519,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 6,
+          "id": 941,
+          "piece": "Ġ//",
+          "decoded": " //",
+          "logit": 10.5113,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 7,
+          "id": 11497,
+          "piece": "Ġiter",
+          "decoded": " iter",
+          "logit": 10.2802,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 8,
+          "id": 28190,
+          "piece": "Ġtuple",
+          "decoded": " tuple",
+          "logit": 9.9601,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 9,
+          "id": 62,
+          "piece": "_",
+          "decoded": "_",
+          "logit": 9.844,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 10,
+          "id": 341,
+          "piece": "Ġis",
+          "decoded": " is",
+          "logit": 9.5469,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 11,
+          "id": 296,
+          "piece": "Ġin",
+          "decoded": " in",
+          "logit": 9.5409,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 12,
+          "id": 95665,
+          "piece": "Ġslicing",
+          "decoded": " slicing",
+          "logit": 9.4914,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 13,
+          "id": 6666,
+          "piece": "Ġarr",
+          "decoded": " arr",
+          "logit": 9.4593,
+          "wrong": false,
+          "exc": false
+        },
+        {
+          "rank": 14,
+          "id": 115446,
+          "piece": "Ġsubsequence",
+          "decoded": " subsequence",
+          "logit": 9.3556,
+          "wrong": false,
+          "exc": false
+        }
+      ],
+      "code_tail": "def find_min_diff(arr, n):\n    arr = sorted(arr)\n    diff = 10 ** 20\n    for i in range(n - 1):\n        if arr[i + 1] - arr[i] < diff:\n            diff = arr[i + 2] - arr[i]\n    return diff"
+    }
+  },
+  "per_position_failing": {
+    "mut_idx": 235,
+    "n_positions": 71,
+    "frac_wrong_in_top3": 0.127,
+    "rows": [
+      {
+        "pos": 46,
+        "ctx": "def",
+        "top3": [
+          " __",
+          " solution",
+          " solve"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 47,
+        "ctx": "Ġfind",
+        "top3": [
+          "_p",
+          "_s",
+          "_max"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 48,
+        "ctx": "_min",
+        "top3": [
+          "imum",
+          "imal",
+          "_and"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 49,
+        "ctx": "_diff",
+        "top3": [
+          "erences",
+          "erence",
+          "(arr"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 50,
+        "ctx": "(arr",
+        "top3": [
+          " arr",
+          " []",
+          "nums"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 51,
+        "ctx": ",",
+        "top3": [
+          "求和",
+          " usize",
+          "天数"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 52,
+        "ctx": "Ġn",
+        "top3": [
+          "指的是",
+          "(arr",
+          " //"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 53,
+        "ctx": "):",
+        "top3": [
+          " unnecessary",
+          " redundant",
+          "尾"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 54,
+        "ctx": "Ċ",
+        "top3": [
+          "   ",
+          "的第一步",
+          "有两个"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 55,
+        "ctx": "ĠĠĠ",
+        "top3": [
+          "遍历",
+          "相邻",
+          "最小"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 56,
+        "ctx": "Ġarr",
+        "top3": [
+          ".sort",
+          ".Sort",
+          "排序"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 57,
+        "ctx": "Ġ=",
+        "top3": [
+          " sorted",
+          ".sort",
+          " preprocess"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 58,
+        "ctx": "Ġsorted",
+        "top3": [
+          "后的",
+          "()",
+          "（）"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 59,
+        "ctx": "(arr",
+        "top3": [
+          "Atom",
+          "。",
+          "、董事会"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 60,
+        "ctx": ")",
+        "top3": [
+          ".sort",
+          "排序",
+          "Sort"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 61,
+        "ctx": "Ċ",
+        "top3": [
+          "遍历",
+          "，然后",
+          "然后"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 62,
+        "ctx": "ĠĠĠ",
+        "top3": [
+          "相邻",
+          "相邻的",
+          " consecutive"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 63,
+        "ctx": "Ġdiff",
+        "top3": [
+          " =",
+          "erences",
+          " between"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 64,
+        "ctx": "Ġ=",
+        "top3": [
+          " ",
+          "初始",
+          " initialized"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 65,
+        "ctx": "Ġ",
+        "top3": [
+          "相邻",
+          "之间的",
+          "差值"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 66,
+        "ctx": "1",
+        "top3": [
+          "（或",
+          "假设",
+          "常量"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 67,
+        "ctx": "0",
+        "top3": [
+          "^{",
+          "^",
+          "^{-"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 68,
+        "ctx": "Ġ**",
+        "top3": [
+          " ",
+          " x",
+          "的"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 69,
+        "ctx": "Ġ",
+        "top3": [
+          "代码",
+          "代码片段",
+          " correctness"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 70,
+        "ctx": "2",
+        "top3": [
+          "贷",
+          "假设",
+          "i"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 71,
+        "ctx": "0",
+        "top3": [
+          "(global",
+          "\n",
+          "表示"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 72,
+        "ctx": "Ċ",
+        "top3": [
+          "逐个",
+          "遍历",
+          "逐"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 73,
+        "ctx": "ĠĠĠ",
+        "top3": [
+          "错误的",
+          "错误",
+          "混淆"
+        ],
+        "wrong_in_top3": true
+      },
+      {
+        "pos": 74,
+        "ctx": "Ġfor",
+        "top3": [
+          "遍历",
+          " i",
+          " loop"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 75,
+        "ctx": "Ġi",
+        "top3": [
+          "遍历",
+          " ∈",
+          ".arange"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 76,
+        "ctx": "Ġin",
+        "top3": [
+          " logic",
+          "逻辑",
+          "错误的"
+        ],
+        "wrong_in_top3": true
+      },
+      {
+        "pos": 77,
+        "ctx": "Ġrange",
+        "top3": [
+          "(len",
+          "遍历",
+          "[:-"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 78,
+        "ctx": "(n",
+        "top3": [
+          "-",
+          " -",
+          "减"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 79,
+        "ctx": "Ġ-",
+        "top3": [
+          "遍历",
+          "的",
+          ".Iter"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 80,
+        "ctx": "Ġ",
+        "top3": [
+          "代码中",
+          " referenced",
+          "文中"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 81,
+        "ctx": "1",
+        "top3": [
+          "遍历",
+          "相邻",
+          "Pairs"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 82,
+        "ctx": "):",
+        "top3": [
+          "邻近",
+          "相邻",
+          "Pair"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 83,
+        "ctx": "Ċ",
+        "top3": [
+          "       ",
+          " if",
+          "修正"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 84,
+        "ctx": "ĠĠĠĠĠĠĠ",
+        "top3": [
+          "相邻",
+          "相邻的",
+          " consecutive"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 85,
+        "ctx": "Ġif",
+        "top3": [
+          " !(",
+          "语句",
+          " abs"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 86,
+        "ctx": "Ġarr",
+        "top3": [
+          "[i",
+          "第i",
+          "[j"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 87,
+        "ctx": "[i",
+        "top3": [
+          "或其",
+          "和目标",
+          "与前"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 88,
+        "ctx": "Ġ+",
+        "top3": [
+          "的",
+          "方向上的",
+          ".Security"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 89,
+        "ctx": "Ġ",
+        "top3": [
+          " pair",
+          "和最",
+          "Pair"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 90,
+        "ctx": "1",
+        "top3": [
+          "减去",
+          " minus",
+          "与前"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 91,
+        "ctx": "]",
+        "top3": [
+          "与前",
+          "减去",
+          "与"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 92,
+        "ctx": "Ġ-",
+        "top3": [
+          "差值",
+          "的最小",
+          "与前"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 93,
+        "ctx": "Ġarr",
+        "top3": [
+          "[i",
+          "差值",
+          "[j"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 94,
+        "ctx": "[i",
+        "top3": [
+          "之间",
+          "之间的",
+          "与前"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 95,
+        "ctx": "]",
+        "top3": [
+          "之间的",
+          "的最小",
+          "最小的"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 96,
+        "ctx": "Ġ<",
+        "top3": [
+          "或等于",
+          "等于",
+          "假设"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 97,
+        "ctx": "Ġdiff",
+        "top3": [
+          " overwrite",
+          " ->",
+          "或等于"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 98,
+        "ctx": ":",
+        "top3": [
+          "记录的",
+          "记录",
+          " captures"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 99,
+        "ctx": "Ċ",
+        "top3": [
+          "更正",
+          "赋值",
+          "修正"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 100,
+        "ctx": "ĠĠĠĠĠĠĠĠĠĠĠ",
+        "top3": [
+          "应该是",
+          "应为",
+          "，应该是"
+        ],
+        "wrong_in_top3": true
+      },
+      {
+        "pos": 101,
+        "ctx": "Ġdiff",
+        "top3": [
+          " =",
+          " +=",
+          " overwritten"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 102,
+        "ctx": "Ġ=",
+        "top3": [
+          "差值",
+          "的值",
+          " ???"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 103,
+        "ctx": "Ġarr",
+        "top3": [
+          "相邻",
+          "相邻的",
+          "当前"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 104,
+        "ctx": "[i",
+        "top3": [
+          "相邻",
+          "相邻的",
+          " consecutive"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 105,
+        "ctx": "Ġ+",
+        "top3": [
+          " ???",
+          " ??",
+          ".charAt"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 106,
+        "ctx": "Ġ",
+        "top3": [
+          "错误的",
+          "错误",
+          " flawed"
+        ],
+        "wrong_in_top3": true
+      },
+      {
+        "pos": 107,
+        "ctx": "2",
+        "top3": [
+          " ???",
+          "而不是",
+          " instead"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 108,
+        "ctx": "]",
+        "top3": [
+          " incorrectly",
+          "与原",
+          " ???"
+        ],
+        "wrong_in_top3": true
+      },
+      {
+        "pos": 109,
+        "ctx": "Ġ-",
+        "top3": [
+          "是错误的",
+          " ???",
+          " incorrectly"
+        ],
+        "wrong_in_top3": true
+      },
+      {
+        "pos": 110,
+        "ctx": "Ġarr",
+        "top3": [
+          "后的",
+          "之后的",
+          "之后"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 111,
+        "ctx": "[i",
+        "top3": [
+          "的距离",
+          "的计划",
+          "两半"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 112,
+        "ctx": "]",
+        "top3": [
+          " incorrectly",
+          " mistakenly",
+          "错误"
+        ],
+        "wrong_in_top3": true
+      },
+      {
+        "pos": 113,
+        "ctx": "Ċ",
+        "top3": [
+          " mistakenly",
+          "错位",
+          "错误"
+        ],
+        "wrong_in_top3": true
+      },
+      {
+        "pos": 114,
+        "ctx": "ĠĠĠ",
+        "top3": [
+          " return",
+          "错误的",
+          "错误"
+        ],
+        "wrong_in_top3": true
+      },
+      {
+        "pos": 115,
+        "ctx": "Ġreturn",
+        "top3": [
+          "结果",
+          "的值",
+          "不了了"
+        ],
+        "wrong_in_top3": false
+      },
+      {
+        "pos": 116,
+        "ctx": "Ġdiff",
+        "top3": [
+          "取值",
+          "。",
+          ".undefined"
+        ],
+        "wrong_in_top3": false
+      }
+    ]
+  },
+  "note": "logit-lens = linear projection through final-norm gain + unembedding, NOT ground truth. wrongness lexicon = EN+ZH regex (lens_control.py); exc = Python-exception subset. direction == pert_run/fit_dirs fit (mean-pooled, per-problem-centered, unit).",
+  "elapsed_s": 500.6
+}

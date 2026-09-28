@@ -1,0 +1,34 @@
+# Reproducible local outputs
+/build/
+/artifacts/*
+!/artifacts/paper.pdf
+!/artifacts/arxiv-source.zip
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# TeX intermediates
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+!data/final_layer/runFS_probe.log
+
+# Model weights and activation dumps are distributed separately
+*.pt
+*.pth
+*.npz
+*.safetensors
+*.part-*
+
+# Local machine and credential files
+.DS_Store
+.env
+.env.*
