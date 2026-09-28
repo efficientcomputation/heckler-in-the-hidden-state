@@ -1,8 +1,8 @@
 # Reproducible local outputs
 /build/
-/artifacts/*
-!/artifacts/paper.pdf
-!/artifacts/arxiv-source.zip
+/artifacts/
+/paper/
+/submission/
 
 # Python environments and caches
 .venv/

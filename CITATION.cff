@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this research code or its results, please cite the accompanying manuscript."
+title: "A Heckler in the Hidden State: Correctness Signals in Diffusion Language Models"
+type: software
+authors:
+  - family-names: Miglani
+    given-names: Angad
+  - family-names: Chadha
+    given-names: Samrath Singh
+  - family-names: Li
+    given-names: Kevin
+  - family-names: Ravulapalli
+    given-names: Manas Venkata Sai
+repository-code: "https://github.com/efficientcomputation/heckler-in-the-hidden-state"
+url: "https://github.com/efficientcomputation/heckler-in-the-hidden-state"
+keywords:
+  - diffusion language models
+  - code generation
+  - linear probes
+  - activation steering
+preferred-citation:
+  type: unpublished
+  title: "A Heckler in the Hidden State: Correctness Signals in Diffusion Language Models"
+  authors:
+    - family-names: Miglani
+      given-names: Angad
+    - family-names: Chadha
+      given-names: Samrath Singh
+    - family-names: Li
+      given-names: Kevin
+    - family-names: Ravulapalli
+      given-names: Manas Venkata Sai
+  year: 2026
+  url: "https://github.com/efficientcomputation/heckler-in-the-hidden-state"

@@ -1,12 +1,12 @@
 # Data guide
 
-The files below map the paper's graphs and experimental sections to compact results. Filenames retain the run and model identifiers used when the results were produced. The separate provenance map lists their original locations.
+This guide maps the stored experimental results to the inputs used by the figure scripts. Filenames retain the run and model identifiers used when the results were produced. The [source mapping](source_mapping.json) lists their original locations.
 
 ## Graph inputs
 
 | Output figure | Input files or values | Interpretation |
 | --- | --- | --- |
-| `g3_jspace_depth.pdf` | `data/probing/decode_*.json`, `layer_curve` | Original per-layer correctness-read curves for six models |
+| `g3_jspace_depth.pdf` | `data/probing/decode_*.json`, `layer_curve` | Supplied reconstructed layerwise correctness-read curves for six models |
 | `jspace_readable_vs_interpretable.pdf` | The same six files, `auc_at_peak` and `neg_wrong_frac` | Probe AUC versus wrongness-token count among the negative pole's top 30 tokens |
 | `g1_param_correctness_noise.pdf` | `data/perturbations/noise_replicates/neuro_partA_*.json` | Mean stored AUC at each noise magnitude for DiffuCoder, LLaDA-mini and LLaDA-flash |
 | `auc_vs_causal.pdf` | `data/perturbations/interventions/*__causal.json` | Attention-ablation read AUC, using the plotting code's drift check |
@@ -16,7 +16,7 @@ The files below map the paper's graphs and experimental sections to compact resu
 
 `data/figure_values.json` stores all plotted numerical coordinates for the seven figures. It is used to check redrawing, including points, bars and error-bar geometry. It is not a replacement for the experiment inputs.
 
-The original depth curves include final entries whose capture convention can differ from intermediate blocks. Use the dedicated final-layer summaries below for the paper's remeasurement discussion. The dissociation figure follows the manuscript's plotting inputs, which differ from an earlier blog figure.
+Five of the six depth files contain `reproduces_logged_peak: false`; the reconstructed curves do not uniformly reproduce the initially logged peak estimates. Their final entries also use capture conventions that can differ from intermediate blocks. The dedicated final-layer summaries below contain the later raw and normalized-state measurements. The read-versus-generation figure uses the result inputs listed above, which differ from those used in an earlier blog figure.
 
 ## Probe and confidence comparisons
 
@@ -41,7 +41,7 @@ A mixed-outcome problem has at least one passing and one failing rollout. The an
 | `data/final_layer/runFS_probe.log` | Compact console summary accompanying the Stable follow-up |
 | `data/tables/bug_tests.csv` | Supplied mutant-test summary |
 | `data/tables/final_layer_battery.csv` | Supplied DiffuCoder final-layer battery summary |
-| `data/tables/depth_curves.csv` | Supplied original depth curves and available remeasurement rows |
+| `data/tables/depth_curves.csv` | Per-layer AUC table; its `capture` field distinguishes rows labelled `original` from later remeasurements |
 
 The available final-layer scripts are `runD_final.py`, `runF_flash.py`, and `runF_stable.py` under `code/campaign/`. The run-C capture scripts are not included in the available source.
 
@@ -49,7 +49,7 @@ The available final-layer scripts are `runD_final.py`, `runF_flash.py`, and `run
 
 `data/steering/runE_shard0.jsonl` through `runE_shard5.jsonl` contain per-task pass and compile outcomes for the eleven-arm campaign. Each line identifies a task and records the arm outcomes. `data/tables/steering_arms.csv` summarizes those outcomes. The available fitting, training and evaluation code is `code/campaign/runE_steer.py`.
 
-This campaign is separate from the earlier four-bar steering figure. Do not substitute one result set for the other when reproducing the paper's plots.
+This campaign is separate from the earlier four-bar steering figure. Its per-task outcomes are not the inputs to `steer_asymmetry.pdf`.
 
 ## Noise and summary tables
 

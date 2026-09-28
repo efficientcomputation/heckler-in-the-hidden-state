@@ -6,7 +6,7 @@ The study separates three questions: whether activations predict correctness, wh
 
 The primary diffusion model is DiffuCoder-7B-cpGRPO. The broader probe/perturbation results include Dream-Coder-7B, Stable-DiffCoder-8B, LLaDA2.0-mini, LLaDA-flash, and UltraLLaDA-8B. The Qwen2.5-Coder capture uses the autoregressive `Qwen/Qwen2.5-Coder-7B-Instruct` checkpoint. MBPP+ supplies code-generation tasks, and the mutant checks include MBPP+ and HumanEval+.
 
-The compact files preserve the measured outputs, but do not include immutable model or dataset revision hashes for every run. Model sizes and variant names differ in some historical filenames; for example, `LLaDA-flash-100B` denotes the model described as 102B in the paper. Refer to the manuscript for model descriptions and to the data guide for each stored result.
+The result files do not include immutable model or dataset revision hashes for every run. Model sizes and variant names differ in some historical filenames; for example, `LLaDA-flash-100B` denotes the model described as 102B in the study. The [data guide](DATA_GUIDE.md) identifies each stored result and distinguishes reconstructed depth curves from later measurements.
 
 ## Available scripts and dependencies
 
@@ -20,7 +20,7 @@ The compact files preserve the measured outputs, but do not include immutable mo
 | `code/perturbations/pert_ext.py`, `neuro_clean.py` | Perturbation extensions and clean activation capture | Model weights and the original mutant corpus |
 | `code/perturbations/neuro_analytic.py`, `repro_seed.py` | Analysis of stored activation captures | Original clean activation dumps and `pert_ext.py` |
 
-The local modules `jcode`, `gradefix`, and `ladder_subtle2` are not supplied. They define data loading, prompting, code extraction, grading or mutation behavior, so replacing them would change the experiment. The original run-C capture and logit-lens-generation source are also unavailable in this package. Some original clean all-layer dumps were reported lost in the research notes.
+The local modules `jcode`, `gradefix`, and `ladder_subtle2` are not supplied. They define data loading, prompting, code extraction, grading or mutation behavior, so replacing them would change the experiment. The original run-C capture and logit-lens-generation source are also not included in this repository. Some original clean all-layer dumps were reported lost in the research notes.
 
 `requirements/experiments.in` lists dependencies visible in the available code. Transformers 4.51.3 is recorded in the original campaign notes; the other full-experiment package versions are not frozen. The file is not a tested environment lockfile. `requirements/figures.txt` is the separate, tested figure environment.
 
@@ -49,6 +49,6 @@ These experiment commands have not been run from the compact repository. The loa
 
 ## Steering settings
 
-The available run-E script uses layer 18, intervention magnitude 0.4, and eleven arms evaluated together. It distinguishes all-position and still-masked-position interventions, matched random directions, and an optimized direction. Random control directions use seed `10000 + task_index`. The supplied per-task outcomes cover the campaign described in the paper; original generation seeds and a complete immutable environment have not been reconstructed.
+The available run-E script uses layer 18, intervention magnitude 0.4, and eleven arms evaluated together. It distinguishes all-position and still-masked-position interventions, matched random directions, and an optimized direction. Random control directions use seed `10000 + task_index`. The supplied per-task outcomes correspond to these eleven conditions; original generation seeds and a complete immutable environment have not been reconstructed.
 
 New model runs would be new measurements. They should record model/data revisions, seeds, hardware, precision, package versions and the exact commands alongside their results. No new model inference was performed to prepare this repository.

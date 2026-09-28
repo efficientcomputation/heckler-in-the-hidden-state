@@ -2,54 +2,60 @@
 
 **Correctness Signals in Diffusion Language Models**
 
-This repository accompanies the paper by Angad Miglani, Samrath Singh Chadha, Kevin Li, and Manas Venkata Sai Ravulapalli. It contains the manuscript, available research scripts, and compact experimental results for studying correctness probes and activation steering in diffusion code models.
+Research code and results for the paper by Angad Miglani, Samrath Singh Chadha, Kevin Li, and Manas Venkata Sai Ravulapalli, Efficient Computation Inc.
 
-## Start here
+Can a code model's hidden states tell us whether its answer is correct, and can that information help it write better code? We study linear correctness probes across six diffusion models, compare them with model confidence, and test activation steering. The probes distinguish passing from failing programs, but the tested steering procedures do not produce a dependable improvement in generated code.
 
-- [Paper PDF](artifacts/paper.pdf) and [arXiv source ZIP](artifacts/arxiv-source.zip)
-- [Paper source](paper/main.tex) and [appendix](paper/appendix.tex)
-- [Data guide](docs/DATA_GUIDE.md): which files support each figure and result
-- [Reproduction instructions](docs/REPRODUCING.md): redraw the figures and compile the paper
-- [Experiment notes](docs/EXPERIMENTS.md): models, settings, dependencies, and method details
-- [Source provenance](docs/PROVENANCE.md): the origin and organization of the supplied code and data
+## Explore the results
 
-The compact data are sufficient to redraw all seven graphs. Repeating model inference requires additional inputs and helper modules described in the experiment notes; model weights and activation dumps are not included.
+| Start with | What it contains |
+| --- | --- |
+| [Data guide](docs/DATA_GUIDE.md) | The input files behind each graph and experimental comparison |
+| [Result tables](data/tables/) | Probe, confidence, perturbation, final-layer, and steering summaries |
+| [Per-task steering outcomes](data/steering/) | Passing and compiling outcomes for the eleven intervention conditions |
+| [Experiment notes](docs/EXPERIMENTS.md) | Models, tasks, analysis procedures, and requirements for new runs |
 
-## Redraw the figures
+<img src="docs/figures/correctness-depth.png" alt="Correctness-probe AUC across network depth for six diffusion code models" width="640">
 
-With Python 3.12, from this directory:
+Correctness-probe AUC across network depth. These curves are reconstructed from the supplied layerwise results; the [data guide](docs/DATA_GUIDE.md) distinguishes them from the original peak selections.
+
+## Reproduce the figures
+
+The included data are sufficient to redraw all seven graphs. No model download or inference is needed. With Python 3.12:
 
 ```bash
-python -m venv .venv
+git clone https://github.com/efficientcomputation/heckler-in-the-hidden-state.git
+cd heckler-in-the-hidden-state
+python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements/figures.txt
 .venv/bin/python scripts/manifest.py
 .venv/bin/python scripts/plot_figures.py
 ```
 
-PDF figures are written to `build/figures/`. The script compares their numerical coordinates with the supplied plotting reference and frozen figure values. Redrawing uses only local data after the Python dependencies are installed.
+The command writes graph PDFs to `build/figures/` and PNG previews to `build/checks/`. It checks every graph's numerical coordinates against the supplied reference values. See the [reproduction guide](docs/REPRODUCING.md) for output files and verification details.
 
-## Build the paper and submission
+## Run new experiments
 
-With XeLaTeX installed:
+The capture, probing, and steering scripts are in [code/campaign/](code/campaign/); perturbation scripts are in [code/perturbations/](code/perturbations/). They preserve the original experiment implementations.
 
-```bash
-python scripts/build_paper.py
-python scripts/package_arxiv.py
+New model runs require model weights, experiment inputs, and helper modules that are not included here; downstream analyses also need the original activation shards. The [experiment notes](docs/EXPERIMENTS.md) list the requirements for each script, original path assumptions, and statistical limitations. The figure-only environment does not provide a complete inference environment.
+
+## Repository layout
+
+```text
+code/           Capture, analysis, steering, and perturbation scripts
+data/           Compact result files and per-task outcomes
+docs/           Data guide, methods, reproduction steps, and provenance
+requirements/   Tested plotting dependencies and experiment dependency inventory
+scripts/        Figure generation and file-integrity verification
 ```
 
-The outputs are `artifacts/paper.pdf` and `artifacts/arxiv-source.zip`. The ZIP contains the manuscript and compact supplementary code/data under `anc/`. Copy the [submission fields](submission/arxiv-fields.md) into the arXiv form; that Markdown file is kept outside the ZIP. Check arXiv's generated preview before completing a submission.
+## Citation
 
-## Layout
+If you use these results or code, cite *A Heckler in the Hidden State: Correctness Signals in Diffusion Language Models* by Angad Miglani, Samrath Singh Chadha, Kevin Li, and Manas Venkata Sai Ravulapalli (2026). Citation metadata is in [CITATION.cff](CITATION.cff).
 
-| Directory | Contents |
-| --- | --- |
-| `paper/` | LaTeX, bibliography, appendix, and manuscript figure PDFs |
-| `code/campaign/` | Probe, capture, steering, and final-layer scripts |
-| `code/perturbations/` | Perturbation capture and analysis scripts |
-| `data/` | Result summaries and per-task steering outcomes, grouped by purpose |
-| `scripts/` | Portable figure redraw, source manifest, paper build, and packaging tools |
-| `requirements/` | Figure environment and experiment dependency inventory |
-| `docs/` | Data map, methods, reproduction steps, and provenance |
-| `submission/` | Text for the arXiv submission form |
-| `build/` | Local figures, logs and build reports, excluded by `.gitignore` |
-| `artifacts/` | The paper PDF and arXiv source ZIP are included in Git; other generated files are ignored |
+## Questions and corrections
+
+Open a [GitHub issue](https://github.com/efficientcomputation/heckler-in-the-hidden-state/issues) with the relevant data file or command, repository commit, and expected versus observed output.
+
+No repository-wide license is specified. Model and benchmark licenses apply separately. [Source provenance](docs/PROVENANCE.md) records where the supplied code and results came from.

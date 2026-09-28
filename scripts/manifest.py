@@ -7,7 +7,7 @@ import json
 
 ROOT = Path(__file__).resolve().parents[1]
 DIRECTORIES = ('code', 'data', 'docs', 'requirements', 'scripts')
-ROOT_FILES = ('README.md', '.gitignore')
+ROOT_FILES = ('README.md', '.gitignore', 'CITATION.cff')
 
 
 def source_files(root=ROOT):
@@ -19,7 +19,7 @@ def source_files(root=ROOT):
 
 
 def make_manifest(root=ROOT):
-    return {'scope': 'Code, supplied result data, scripts and documentation; paper and generated artifacts are separate.',
+    return {'scope': 'Research code, supplied result data, scripts, documentation and citation metadata; generated outputs are excluded.',
             'hash_algorithm': 'sha256',
             'files': {p.relative_to(root).as_posix(): {'bytes': p.stat().st_size,
                         'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in source_files(root)}}

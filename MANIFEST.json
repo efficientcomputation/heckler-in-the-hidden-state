@@ -1,14 +1,18 @@
 {
-  "scope": "Code, supplied result data, scripts and documentation; paper and generated artifacts are separate.",
+  "scope": "Research code, supplied result data, scripts, documentation and citation metadata; generated outputs are excluded.",
   "hash_algorithm": "sha256",
   "files": {
     ".gitignore": {
-      "bytes": 463,
-      "sha256": "f0928c14874961d5b93f7803d8fc5802d394bd17cbfb0b365a14b00711b4fd83"
+      "bytes": 432,
+      "sha256": "c662c374e46cce27f4c38b47ada2a57eb956a7d60bc211ed5f34a1e02c49b272"
+    },
+    "CITATION.cff": {
+      "bytes": 1170,
+      "sha256": "473bac0d997fda0715a0fc53532cda21efcaa053cbe9266b0053fed0a87d36fe"
     },
     "README.md": {
-      "bytes": 3185,
-      "sha256": "f7d0099e1b03174bb4a498935ef337c6942aef184f455615cf0a9b5dfe9d1917"
+      "bytes": 3891,
+      "sha256": "4c97a103a402823acc2d45d2fd1dc013dc1bd421b0b05753a5ca1d1f37433e4c"
     },
     "code/campaign/analyzeAB.py": {
       "bytes": 6384,
@@ -211,20 +215,24 @@
       "sha256": "433a9f8a4398c7e25e4675157475921c1aa0eefd89db9d9b037c22fbcdfdb429"
     },
     "docs/DATA_GUIDE.md": {
-      "bytes": 4870,
-      "sha256": "767a54a64eb37b725d5778f8822eb776caafe57d0b1ab16c3c54fe070d6a08ad"
+      "bytes": 5098,
+      "sha256": "3624c1833736b0b07fb8148ef485c9f107a0ae86c44345137993563899112151"
     },
     "docs/EXPERIMENTS.md": {
-      "bytes": 5756,
-      "sha256": "874fa60cdd8a14498516b87af465768416767d07a42d20ffe8d66cd25b2b0f35"
+      "bytes": 5759,
+      "sha256": "22f3c6fe5b97d9621b391c181612b713b01faaa0f33120803253a228895b3fe2"
     },
     "docs/PROVENANCE.md": {
-      "bytes": 2370,
-      "sha256": "f07f4cc1b9f7b18d328e1eb0be9d96a166702789c9225e9c2609aee9b4787974"
+      "bytes": 2184,
+      "sha256": "3be93d874a1f60be011f2f309fba9e6bcdd62f01bab1d81f483239743395b377"
     },
     "docs/REPRODUCING.md": {
-      "bytes": 3248,
-      "sha256": "d6756f44fd9d9d25d08e050766a61c50b15e53370e684394f33c51d80c6a87dd"
+      "bytes": 2679,
+      "sha256": "197554c0b82bc031cbcf959a8737dd40061e55a36743762027aa1a9dbfc06a7d"
+    },
+    "docs/figures/correctness-depth.png": {
+      "bytes": 98093,
+      "sha256": "5e1525e68729b34f1fdfd9f7d1190e10d723182e35bb121e0f89ee50d3004272"
     },
     "docs/source_mapping.json": {
       "bytes": 13511,
@@ -238,17 +246,9 @@
       "bytes": 82,
       "sha256": "58afb227303b0cfd93109b31d472d42c3648af164a9372739b270155ed147ae9"
     },
-    "scripts/build_paper.py": {
-      "bytes": 4320,
-      "sha256": "0f8261787df0ad837c52317dd464501749f4f1a423372809af61a6188596ef70"
-    },
     "scripts/manifest.py": {
-      "bytes": 1976,
-      "sha256": "f727c40588fccf909b8c1b0974e86aa76ef1c59292a2af0a59408321e33a7776"
-    },
-    "scripts/package_arxiv.py": {
-      "bytes": 5578,
-      "sha256": "247b1a475b834030254f8b2af699875a7f8a4a9b3671475aae6ae406582e8b5e"
+      "bytes": 2008,
+      "sha256": "c866bfe70381fe30a8993843dd6d83a680820d0fe645b13878e07dcce0ade3f8"
     },
     "scripts/plot_figures.py": {
       "bytes": 18768,
