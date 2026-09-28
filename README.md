@@ -4,8 +4,6 @@
 
 This repository accompanies the paper by Angad Miglani, Samrath Singh Chadha, Kevin Li, and Manas Venkata Sai Ravulapalli. It contains the manuscript, available research scripts, and compact experimental results for studying correctness probes and activation steering in diffusion code models.
 
-Repository address: [efficientcomputation/heckler-in-the-hidden-state](https://github.com/efficientcomputation/heckler-in-the-hidden-state). The [publication steps](submission/publish.md) explain how to create the repository, push this folder, and upload the arXiv source.
-
 ## Start here
 
 - [Paper PDF](artifacts/paper.pdf) and [arXiv source ZIP](artifacts/arxiv-source.zip)
